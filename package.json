@@ -1,0 +1,57 @@
+{
+  "name": "http-client-x",
+  "description": "Simple HTTP client that works both in Node.js and browser",
+  "author": {
+    "name": "The National Library of Finland"
+  },
+  "keywords": [
+  ],
+  "homepage": "https://github.com/NatLibFi/http-client-x",
+  "bugs": {
+    "url": "https://github.com/NatLibFi/http-client-x/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:NatLibFi/http-client-x.git"
+  },
+  "license": " GPL-3.0+",
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "jshint .",
+    "test-nodejs": "istanbul cover --dir coverage/nodejs _mocha -- test/*.spec.js test/nodejs/*.spec.js",
+    "test-browser": "npm run generate-requirejs-config && karma start",
+    "cover-nodejs": "npm run test-nodejs && istanbul check-coverage coverage/nodejs/coverage.json",
+    "cover-browser": "npm run test-browser && istanbul check-coverage coverage/browser/coverage-final.json",
+    "cover": "npm run test && npm run combine-coverage && istanbul check-coverage coverage/combined/coverage-final.json",
+    "test": "npm run test-nodejs && npm run test-browser",
+    "check": "npm run lint && npm run cover",
+    "travisci": "npm run check",
+    "combine-coverage": "istanbul-combine -d coverage/combined -r html -r lcov -r json coverage/nodejs/coverage.json coverage/browser/coverage-final.json",
+    "publish-to-npm": "npm install && npm run check && npm publish",
+    "generate-requirejs-config": "requirejs-configurator --npm --include-dev-deps > test/browser/main.js"
+  },
+  "dependencies": {
+    "es6-polyfills": "^1.0.1",
+    "requirejs-plugins": "^1.0.2"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "chai-as-promised": "^5.3.0",
+    "jshint": "^2.8.0",
+    "simple-mock": "^0.7.0",
+    "nock": "^8.0.0",
+    "xmlhttprequest-mock": "https://github.com/natlibfi/xmlhttprequest-mock",
+    "mocha": "https://github.com/jRiest/mocha#fix_browser_delay_built",
+    "istanbul": "^0.4.2",
+    "istanbul-combine": "^0.3.0",
+    "karma": "^0.13.19",
+    "karma-mocha": "^0.2.1",
+    "karma-coverage": "^0.5.5",
+    "karma-requirejs": "^0.2.3",
+    "karma-phantomjs-launcher": "^0.2.3",
+    "karma-requirejs-preprocessor": "^0.0.2",
+    "phantomjs-prebuilt": "^2.1.5",
+    "requirejs-configurator": "https://github.com/natlibfi-arlehiko/requirejs-configurator#dev-deps",
+    "codeclimate-test-reporter": "^0.1.1"
+  }
+}
