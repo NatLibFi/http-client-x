@@ -1,4 +1,4 @@
-# HTTP client X [![Build Status](https://travis-ci.org/NatLibFi/http-client-x.svg)](https://travis-ci.org/NatLibFi/http-client-x) [![Test Coverage](https://codeclimate.com/github/NatLibFi/http-client-x/badges/coverage.svg)](https://codeclimate.com/github/NatLibFi/http-client-x/coverage)
+# HTTP client X [![NPM Version](https://img.shields.io/npm/v/http-client-x.svg)](https://npmjs.org/package/http-client-x) [![Build Status](https://travis-ci.org/NatLibFi/http-client-x.svg)](https://travis-ci.org/NatLibFi/http-client-x) [![Test Coverage](https://codeclimate.com/github/NatLibFi/http-client-x/badges/coverage.svg)](https://codeclimate.com/github/NatLibFi/http-client-x/coverage)
 
 Simple HTTP client that works both in Node.js and browser.
 
