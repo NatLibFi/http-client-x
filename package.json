@@ -5,6 +5,21 @@
     "name": "The National Library of Finland"
   },
   "keywords": [
+    "http",
+    "xmlhttprequest",
+    "fetch",
+    "get",
+    "head",
+    "delete",
+    "post",
+    "put",
+    "rest",
+    "network",
+    "request",
+    "client",
+    "browser",
+    "node",
+    "cross-platform"
   ],
   "homepage": "https://github.com/NatLibFi/http-client-x",
   "bugs": {
