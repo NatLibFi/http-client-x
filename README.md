@@ -1,4 +1,4 @@
-# HTTP client X [![NPM Version](https://img.shields.io/npm/v/http-client-x.svg)](https://npmjs.org/package/http-client-x) [![Build Status](https://travis-ci.org/NatLibFi/http-client-x.svg)](https://travis-ci.org/NatLibFi/http-client-x) [![Test Coverage](https://codeclimate.com/github/NatLibFi/http-client-x/badges/coverage.svg)](https://codeclimate.com/github/NatLibFi/http-client-x/coverage)
+# HTTP client X [![NPM Version](https://img.shields.io/npm/v/@natlibfi/http-client-x.svg)](https://npmjs.org/package/@natlibfi/http-client-x) [![Build Status](https://travis-ci.org/NatLibFi/http-client-x.svg)](https://travis-ci.org/NatLibFi/http-client-x) [![Test Coverage](https://codeclimate.com/github/NatLibFi/http-client-x/badges/coverage.svg)](https://codeclimate.com/github/NatLibFi/http-client-x/coverage)
 
 Simple HTTP client that works both in Node.js and browser.
 
@@ -66,4 +66,4 @@ npm run check
 
 Copyright (c) 2016 **University Of Helsinki (The National Library Of Finland)**
 
-This project's source code is licensed under the terms of **GNU General Public License Version 3** or any later version.
+This project's source code is licensed under the terms of **GNU Lesser General Public License Version 3** or any later version.

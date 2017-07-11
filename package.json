@@ -1,5 +1,5 @@
 {
-  "name": "http-client-x",
+  "name": "@natlibfi/http-client-x",
   "description": "Simple HTTP client that works both in Node.js and browser",
   "author": {
     "name": "The National Library of Finland"
@@ -29,8 +29,8 @@
     "type": "git",
     "url": "git@github.com:NatLibFi/http-client-x.git"
   },
-  "license": " GPL-3.0+",
-  "version": "1.0.1",
+  "license": " LGPL-3.0+",
+  "version": "1.0.2",
   "scripts": {
     "lint": "jshint .",
     "test-nodejs": "istanbul cover --dir coverage/nodejs _mocha -- test/*.spec.js test/nodejs/*.spec.js",
@@ -42,11 +42,11 @@
     "check": "npm run lint && npm run cover",
     "travisci": "npm run check",
     "combine-coverage": "istanbul-combine -d coverage/combined -r html -r lcov -r json coverage/nodejs/coverage.json coverage/browser/coverage-final.json",
-    "publish-to-npm": "npm install && npm run check && npm publish",
+    "publish-to-npm": "npm install && npm run check && npm publish --access=public",
     "generate-requirejs-config": "requirejs-configurator --npm --include-dev-deps > test/browser/main.js"
   },
   "dependencies": {
-    "es6-polyfills": "^1.0.1"
+    "@natlibfi/es6-polyfills": "^2.0.1"
   },
   "devDependencies": {
     "chai": "^3.2.0",
