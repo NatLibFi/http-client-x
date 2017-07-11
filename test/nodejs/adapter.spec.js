@@ -31,7 +31,7 @@
   'use strict';
   var chai = require('chai'),
   nock = require('nock'),
-  Promise = require('es6-polyfills/lib/polyfills/promise'),
+  Promise = require('@natlibfi/es6-polyfills/lib/polyfills/promise'),
   adapterCallback = require('../../lib/nodejs/adapter'),
   expect = chai.expect;
   

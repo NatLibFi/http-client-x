@@ -66,6 +66,7 @@
     "karma-requirejs-preprocessor": "^0.0.2",
     "phantomjs-prebuilt": "^2.1.14",
     "requirejs-configurator": "https://github.com/natlibfi-arlehiko/requirejs-configurator#peer-deps",
-    "codeclimate-test-reporter": "^0.5.0"
+    "codeclimate-test-reporter": "^0.5.0",
+    "requirejs": "^2.3.3"
   }
 }

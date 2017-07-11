@@ -29,8 +29,8 @@
 define([
   'chai/chai',
   'chai-as-promised',
-  'xmlhttprequest-mock',
-  'es6-polyfills/lib/polyfills/promise',
+  '@natlibfi/xmlhttprequest-mock',
+  '@natlibfi/es6-polyfills/lib/polyfills/promise',
   '../../lib/browser/adapter'
 ], function (chai, chaiAsPromised, xhrMockFactory, Promise, adapterCallback) {
 
