@@ -30,7 +30,7 @@
     "url": "git@github.com:NatLibFi/http-client-x.git"
   },
   "license": " LGPL-3.0+",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
     "lint": "jshint .",
     "test-nodejs": "istanbul cover --dir coverage/nodejs _mocha -- test/*.spec.js test/nodejs/*.spec.js",
